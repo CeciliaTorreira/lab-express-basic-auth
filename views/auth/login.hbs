@@ -1,0 +1,25 @@
+<div>
+    <h3>Acceso a cuenta</h3>
+
+<div class="login-card">
+
+<form action="/auth/login" method="post">
+
+   <label for="username">Usuario:</label>
+   <input type="text" name="username">
+  
+
+   <br>
+   <br>
+
+   <label for="password">Contraseña:</label>
+   <input type="password" name="password">
+
+<br>
+<br>
+
+
+<button>Acceder</button>
+
+ <p>{{errorMessage}}</p>
+</form>

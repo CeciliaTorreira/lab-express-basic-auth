@@ -5,4 +5,11 @@ router.get("/", (req, res, next) => {
   res.render("index");
 });
 
+//* AUTENTICACIÓN
+
+const authRouter = require("./auth.routes.js") 
+router.use("/auth", authRouter) 
+
+
+//---------------
 module.exports = router;
